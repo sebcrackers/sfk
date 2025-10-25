@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Registration - SFK SPORT GROUP</title>
+    <meta name="description" content="Register with SFK Sport Group for football recruitment opportunities in Ethiopia">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Player Registration - SFK SPORT GROUP">
+    <meta property="og:description" content="Register with SFK Sport Group for football recruitment opportunities in Ethiopia">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Variables for Theming */
+        :root {
+            --primary: #0f1720;        /* Charcoal */
+            --secondary: #ffffff;      /* Pure white */
+            --muted: #64748b;          /* Soft gray */
+            --accent: #0ea5a4;         /* Teal accent */
+            --accent-light: rgba(14, 165, 164, 0.1);
+            --card-bg: rgba(255, 255, 255, 0.85);
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --spacing-xs: 8px;
+            --spacing-sm: 16px;
+            --spacing-md: 24px;
+            --spacing-lg: 32px;
+            --spacing-xl: 48px;
+            --spacing-2xl: 64px;
+            --radius-sm: 10px;
+            --radius-md: 14px;
+            --radius-lg: 18px;
+            --radius-xl: 24px;
+            --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 20px 25px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 25px 50px rgba(0, 0, 0, 0.15);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        /* Global Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: var(--primary);
+            background-color: var(--secondary);
+            overflow-x: hidden;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            letter-spacing: -0.02em;
+            font-weight: 800;
+        }
+        
+        h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            letter-spacing: -0.01em;
+        }
+        
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+        }
+        
+        p {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--primary);
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border-radius: var(--radius-xl);
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            cursor: pointer;
+            transition: var(--transition-slow);
+            border: none;
+            font-size: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary {
+            background-color: var(--accent);
+            color: var(--secondary);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            background-color: #0d9488;
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--accent);
+            color: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn-icon {
+            margin-right: var(--spacing-xs);
+        }
+        
+        /* Button shine effect */
+        .btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: var(--transition-slow);
+        }
+        
+        .btn:hover::after {
+            left: 100%;
+        }
+        
+        /* Container */
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+        
+        /* Sections */
+        section {
+            padding: var(--spacing-2xl) 0;
+        }
+        
+        /* Header */
+        .header {
+            background-color: var(--primary);
+            padding: var(--spacing-md) 0;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--secondary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: var(--spacing-xs);
+            color: var(--accent);
+        }
+        
+        .back-link {
+            display: flex;
+            align-items: center;
+            color: var(--secondary);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .back-link:hover {
+            color: var(--accent);
+        }
+        
+        .back-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: var(--spacing-xs);
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 40vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background-color: var(--primary);
+            margin-bottom: var(--spacing-2xl);
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            object-fit: cover;
+            opacity: 0.3;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(15, 23, 32, 0.9), rgba(15, 23, 32, 0.7));
+            z-index: 2;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            color: var(--secondary);
+            text-align: center;
+            padding: var(--spacing-xl) 0;
+        }
+        
+        .hero-title {
+            color: var(--secondary);
+            margin-bottom: var(--spacing-md);
+            letter-spacing: 1px;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            font-weight: 300;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Form Section */
+        .form-section {
+            background-color: var(--secondary);
+            padding-bottom: var(--spacing-2xl);
+        }
+        
+        .form-container {
+            background-color: var(--card-bg);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-2xl);
+            box-shadow: var(--shadow-lg);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-title {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+            position: relative;
+        }
+        
+        .form-title:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+        
+        .form-description {
+            text-align: center;
+            color: var(--muted);
+            margin-bottom: var(--spacing-xl);
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Form Styles */
+        .registration-form {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-label {
+            margin-bottom: var(--spacing-xs);
+            font-weight: 500;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .form-input {
+            padding: var(--spacing-sm);
+            border: 1px solid #e2e8f0;
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+            background-color: var(--secondary);
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-light);
+        }
+        
+        .form-help {
+            font-size: 0.875rem;
+            color: var(--muted);
+            margin-top: var(--spacing-xs);
+        }
+        
+        .form-checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .form-checkbox {
+            margin-top: 4px;
+        }
+        
+        .form-checkbox-label {
+            font-size: 0.875rem;
+            color: var(--muted);
+        }
+        
+        .form-checkbox-label a {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+        
+        .form-checkbox-label a:hover {
+            color: var(--primary);
+        }
+        
+        .form-submit {
+            margin-top: var(--spacing-md);
+        }
+        
+        .form-privacy {
+            font-size: 0.875rem;
+            color: var(--muted);
+            text-align: center;
+            margin-top: var(--spacing-md);
+        }
+        
+        /* Success Message */
+        .success-message {
+            display: none;
+            background-color: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid #10b981;
+            padding: var(--spacing-md);
+            border-radius: var(--radius-sm);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .success-message.active {
+            display: block;
+        }
+        
+        .success-title {
+            font-weight: 600;
+            color: #10b981;
+            margin-bottom: var(--spacing-xs);
+            display: flex;
+            align-items: center;
+        }
+        
+        .success-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: var(--spacing-xs);
+        }
+        
+        .success-text {
+            color: var(--primary);
+        }
+        
+        /* Error Message */
+        .error-message {
+            display: none;
+            background-color: rgba(239, 68, 68, 0.1);
+            border-left: 4px solid #ef4444;
+            padding: var(--spacing-md);
+            border-radius: var(--radius-sm);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .error-message.active {
+            display: block;
+        }
+        
+        .error-title {
+            font-weight: 600;
+            color: #ef4444;
+            margin-bottom: var(--spacing-xs);
+            display: flex;
+            align-items: center;
+        }
+        
+        .error-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: var(--spacing-xs);
+        }
+        
+        .error-text {
+            color: var(--primary);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: var(--secondary);
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+        }
+        
+        .footer-copyright {
+            font-size: 0.875rem;
+            opacity: 0.6;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: var(--spacing-md);
+            }
+            
+            .hero {
+                min-height: 30vh;
+            }
+            
+            .form-container {
+                padding: var(--spacing-lg);
+            }
+        }
+        
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .fade-in.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+            
+            .btn::after {
+                display: none;
+            }
+        }
+        
+        /* Focus styles for accessibility */
+        *:focus {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+        
+        /* Skip to content link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary);
+            color: var(--secondary);
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    
+    <!-- Header -->
+  
+    
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <img src="https://picsum.photos/seed/football-registration/1920/600.jpg" alt="Football field with players" class="hero-bg" loading="eager">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1 class="hero-title">Player Registration</h1>
+                <p class="hero-subtitle">Take the first step in your professional football journey with SFK Sport Group</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Form Section -->
+    <main class="form-section" id="main">
+        <div class="container">
+            <div class="form-container fade-in">
+                <h2 class="form-title">Register</h2>
+                <p class="form-description">Complete the form below to register for our scouting program and upcoming trials.</p>
+                
+                <!-- Success Message -->
+                <div class="success-message" id="successMessage">
+                    <div class="success-title">
+                        <svg class="success-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        Registration Successful!
+                    </div>
+                    <p class="success-text">Thank you for registering with SFK Sport Group. We'll be in touch with you soon with more information about our upcoming trials and scouting events.</p>
+                </div>
+                
+                <!-- Error Message -->
+                <div class="error-message" id="errorMessage">
+                    <div class="error-title">
+                        <svg class="error-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="8" x2="12" y2="12"></line>
+                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                        </svg>
+                        Submission Error
+                    </div>
+                    <p class="error-text">There was an error submitting your registration. Please try again later or contact us directly.</p>
+                </div>
+                
+                <!-- Registration Form -->
+                <form action="https://formspree.io/f/myzbyzod" method="POST" class="registration-form" id="registrationForm">
+                    <div class="form-group">
+                        <label for="fullName" class="form-label">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" class="form-input" required placeholder="Enter your full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address *</label>
+                        <input type="email" id="email" name="email" class="form-input" required placeholder="Enter your email address">
+                        <p class="form-help">We'll use this to contact you about upcoming trials and events.</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" required placeholder="Enter your phone number">
+                        <p class="form-help">Please include your country code (e.g., +251 for Ethiopia).</p>
+                    </div>
+                    
+                    <div class="form-checkbox-group">
+                        <input type="checkbox" id="consent" name="consent" class="form-checkbox" required>
+                        <label for="consent" class="form-checkbox-label">
+                            I consent to SFK Sport Group collecting and storing my personal data for the purpose of recruitment and communication. I understand that my data will be handled in accordance with the <a href="#">Privacy Policy</a>.
+                        </label>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Registration</button>
+                    </div>
+                    
+                    <p class="form-privacy">Your information is secure and will only be used for recruitment purposes.</p>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="footer-copyright">© 2025 SFK Sport Group. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // DOM Elements
+        const registrationForm = document.getElementById('registrationForm');
+        const successMessage = document.getElementById('successMessage');
+        const errorMessage = document.getElementById('errorMessage');
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('active');
+                    }, index * 60);
+                }
+            });
+        }, observerOptions);
+        
+        fadeElements.forEach(element => {
+            observer.observe(element);
+        });
+        
+        // Form submission with Formspree
+        registrationForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Hide any existing messages
+            successMessage.classList.remove('active');
+            errorMessage.classList.remove('active');
+            
+            // Get form data
+            const formData = new FormData(registrationForm);
+            
+            // Submit the form using fetch
+            fetch(registrationForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Show success message
+                    successMessage.classList.add('active');
+                    // Reset the form
+                    registrationForm.reset();
+                    // Scroll to success message
+                    successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            })
+            .catch(error => {
+                // Show error message
+                errorMessage.classList.add('active');
+                // Scroll to error message
+                errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                console.error('Form submission error:', error);
+            });
+        });
+    </script>
+</body>
+</html>

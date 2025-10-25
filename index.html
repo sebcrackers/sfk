@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFK SPORT GROUP RECRUITMENT IN ETHIOPIA</title>
+    <meta name="description" content="The future of football starts here - SFK Sport Group Recruitment in Ethiopia">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="SFK SPORT GROUP RECRUITMENT IN ETHIOPIA">
+    <meta property="og:description" content="The future of football starts here">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 
+        ====== INSTRUCTIONS ======
+        - Replace placeholder images with actual images
+        - Update phone number in CTAs and footer
+        - Replace placeholder copy with actual content
+        - Add actual analytics script in the commented section at the bottom
+        - Update Open Graph meta tags with actual URL and image
+        =========================
+        */
+        
+        /* CSS Variables for Theming */
+        :root {
+            --primary: #0f1720;        /* Charcoal */
+            --secondary: #ffffff;      /* Pure white */
+            --muted: #64748b;          /* Soft gray */
+            --accent: #0ea5a4;         /* Teal accent */
+            --accent-light: rgba(14, 165, 164, 0.1);
+            --card-bg: rgba(255, 255, 255, 0.85);
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --spacing-xs: 8px;
+            --spacing-sm: 16px;
+            --spacing-md: 24px;
+            --spacing-lg: 32px;
+            --spacing-xl: 48px;
+            --spacing-2xl: 64px;
+            --radius-sm: 10px;
+            --radius-md: 14px;
+            --radius-lg: 18px;
+            --radius-xl: 24px;
+            --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 20px 25px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 25px 50px rgba(0, 0, 0, 0.15);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        /* Global Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: var(--primary);
+            background-color: var(--secondary);
+            overflow-x: hidden;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            letter-spacing: -0.02em;
+            font-weight: 800;
+        }
+        
+        h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            letter-spacing: -0.01em;
+        }
+        
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+        }
+        
+        p {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--primary);
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border-radius: var(--radius-xl);
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            cursor: pointer;
+            transition: var(--transition-slow);
+            border: none;
+            font-size: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary {
+            background-color: var(--accent);
+            color: var(--secondary);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            background-color: #0d9488;
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--accent);
+            color: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn-icon {
+            margin-right: var(--spacing-xs);
+        }
+        
+        /* Button shine effect */
+        .btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: var(--transition-slow);
+        }
+        
+        .btn:hover::after {
+            left: 100%;
+        }
+        
+        /* Container */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+        
+        /* Sections */
+        section {
+            padding: var(--spacing-2xl) 0;
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background-color: var(--primary);
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            object-fit: cover;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(15, 23, 32, 0.85), rgba(15, 23, 32, 0.6));
+            z-index: 2;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            color: var(--secondary);
+            max-width: 600px;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        .hero-title {
+            color: var(--secondary);
+            margin-bottom: var(--spacing-md);
+            letter-spacing: 1px;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            font-weight: 300;
+            margin-bottom: var(--spacing-xl);
+            opacity: 0.9;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .hero-microcopy {
+            font-size: 0.875rem;
+            opacity: 0.7;
+        }
+        
+        /* Wave Separator */
+        .wave-separator {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,64L48,80C96,96,192,128,288,128C384,128,480,96,576,85.3C672,75,768,85,864,90.7C960,96,1056,96,1152,85.3C1248,75,1344,53,1392,42.7L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z'%3E%3C/path%3E%3C/svg%3E") no-repeat bottom;
+            background-size: cover;
+            z-index: 4;
+        }
+        
+        /* About Section */
+        .about {
+            background-color: var(--secondary);
+        }
+        
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-2xl);
+            align-items: center;
+        }
+        
+        .about-image {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            height: 400px;
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .about-content h2 {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .about-disclaimer {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--muted);
+            margin: var(--spacing-md) 0;
+        }
+        
+        /* Statistics Section */
+        .stats {
+            background-color: var(--primary);
+            color: var(--secondary);
+        }
+        
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--spacing-lg);
+            text-align: center;
+        }
+        
+        .stat-item {
+            padding: var(--spacing-md);
+        }
+        
+        .stat-number {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 800;
+            margin-bottom: var(--spacing-xs);
+            color: var(--accent);
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        
+        /* Offers Section */
+        .offers {
+            background-color: var(--primary);
+            padding-bottom: var(--spacing-2xl);
+        }
+        
+        .offers h2 {
+            color: var(--secondary);
+            text-align: center;
+            margin-bottom: var(--spacing-2xl);
+        }
+        
+        .offers-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-lg);
+        }
+        
+        .offer-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            transition: var(--transition-slow);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .offer-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--accent);
+        }
+        
+        .offer-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .offer-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .offer-card:hover .offer-image img {
+            transform: scale(1.05);
+        }
+        
+        .offer-content {
+            padding: var(--spacing-md);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .offer-title {
+            color: var(--secondary);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .offer-description {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+            flex-grow: 1;
+        }
+        
+        /* Be Our Player Section */
+        .player {
+            background-color: var(--secondary);
+        }
+        
+        .player-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-2xl);
+            align-items: center;
+        }
+        
+        .player-content h2 {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .player-image {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            height: 400px;
+        }
+        
+        .player-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Reasons Section */
+        .reasons {
+            background-color: var(--primary);
+            color: var(--secondary);
+        }
+        
+        .reasons h2 {
+            color: var(--secondary);
+            text-align: center;
+            margin-bottom: var(--spacing-2xl);
+        }
+        
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-md);
+        }
+        
+        .reason-card {
+            background-color: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-md);
+            padding: var(--spacing-lg);
+            transition: var(--transition-slow);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .reason-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--accent);
+        }
+        
+        .reason-icon {
+            width: 48px;
+            height: 48px;
+            margin-bottom: var(--spacing-md);
+            color: var(--accent);
+        }
+        
+        .reason-title {
+            font-size: 1.1rem;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        /* Fixed Background Section */
+        .fixed-bg-section {
+            position: relative;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('./assets/sfk1.avif');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            margin-top: -1px; /* Remove gap between sections */
+        }
+        
+        .fixed-bg-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 23, 32, 0.75);
+            backdrop-filter: blur(5px);
+            z-index: 1;
+        }
+        
+        .fixed-bg-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: var(--secondary);
+            max-width: 800px;
+            padding: var(--spacing-2xl);
+        }
+        
+        .fixed-bg-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: var(--spacing-lg);
+            letter-spacing: 1px;
+        }
+        
+        .fixed-bg-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: var(--spacing-xl);
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background-color: var(--secondary);
+            padding-top: var(--spacing-2xl);
+            padding-bottom: var(--spacing-2xl);
+        }
+        
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .contact h2 {
+            margin-bottom: var(--spacing-xl);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .contact h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-2xl);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-md);
+            padding: var(--spacing-md) 0;
+            border-bottom: 1px solid rgba(15, 23, 32, 0.1);
+            transition: var(--transition);
+        }
+        
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+        
+        .contact-item:hover {
+            transform: translateY(-3px);
+        }
+        
+        .contact-icon {
+            width: 24px;
+            height: 24px;
+            color: var(--accent);
+        }
+        
+        .contact-text {
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+        
+        .contact-text a {
+            color: var(--primary);
+            font-weight: 500;
+        }
+        
+        .contact-text a:hover {
+            color: var(--accent);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: var(--secondary);
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+        }
+        
+        .footer-contact {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .footer-contact a {
+            color: var(--secondary);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+        }
+        
+        .footer-contact a:hover {
+            color: var(--accent);
+        }
+        
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .social-icon {
+            width: 32px;
+            height: 32px;
+            color: var(--secondary);
+            transition: var(--transition);
+        }
+        
+        .social-icon:hover {
+            color: var(--accent);
+            transform: translateY(-3px);
+        }
+        
+        .footer-copyright {
+            font-size: 0.875rem;
+            opacity: 0.6;
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .modal.active {
+            display: flex;
+            opacity: 1;
+        }
+        
+        .modal-content {
+            background-color: var(--secondary);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-2xl);
+            max-width: 500px;
+            width: 90%;
+            position: relative;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+        
+        .modal.active .modal-content {
+            transform: scale(1);
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: var(--spacing-md);
+            right: var(--spacing-md);
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--muted);
+            transition: var(--transition);
+        }
+        
+        .modal-close:hover {
+            color: var(--primary);
+        }
+        
+        .form-group {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: var(--spacing-xs);
+            font-weight: 500;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: var(--spacing-sm);
+            border: 1px solid #e2e8f0;
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-light);
+        }
+        
+        .form-privacy {
+            font-size: 0.875rem;
+            color: var(--muted);
+            margin-top: var(--spacing-md);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .offers-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .reasons-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .about-container,
+            .player-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-content {
+                text-align: center;
+                margin: 0 auto;
+            }
+            
+            .hero-buttons {
+                justify-content: center;
+            }
+            
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .offers-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .reasons-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .fixed-bg-section {
+                background-attachment: scroll; /* Disable fixed background on mobile for better performance */
+            }
+            
+            .contact-info {
+                gap: var(--spacing-md);
+            }
+            
+            .contact-item {
+                flex-direction: column;
+                text-align: center;
+                gap: var(--spacing-sm);
+            }
+        }
+        
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .fade-in.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+            
+            .hero-bg {
+                animation: none !important;
+            }
+            
+            .btn::after {
+                display: none;
+            }
+            
+            .fixed-bg-section {
+                background-attachment: scroll;
+            }
+        }
+        
+        /* Focus styles for accessibility */
+        *:focus {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+        
+        /* Skip to content link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary);
+            color: var(--secondary);
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <img src="./assets/sfk1.avif" alt="Football field with players" class="hero-bg" loading="eager">
+        <div class="hero-overlay"></div>
+        <div class="wave-separator"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">SFK SPORT GROUP RECRUITMENT IN ETHIOPIA</h1>
+                <p class="hero-subtitle">The future of football starts here</p>
+                <div class="hero-buttons">
+                    <a href="tel:+251944715726" class="btn btn-primary">
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        Call +251944715726
+                    </a>
+                    <a href="./registration.html"><button class="btn btn-secondary" id="registerBtn">REGISTER</button></a>
+                </div>
+                <p class="hero-microcopy">Register Today!</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-container fade-in">
+                <div class="about-image">
+                    <img src="./assets/sfk3.png" alt="Football training session" loading="lazy">
+                </div>
+                <div class="about-content">
+                    <h2>About Us</h2>
+                    <p>With over 14 years of experience in sports recruitment, SFK Sport Group has established itself as a premier agency for identifying and nurturing football talent in Ethiopia. Our comprehensive scouting network reaches every region of the country.</p>
+                    <p>Our player development methodology combines technical training with mental preparation, ensuring our athletes are prepared for the demands of professional football. We provide personalized development plans tailored to each player's unique strengths and areas for improvement.</p>
+                    <p>Beyond recruitment, we're committed to making a positive impact in communities across Ethiopia through football programs, training facilities, and educational initiatives that empower young athletes.</p>
+                    <p class="about-disclaimer">Certified company</p>
+                    <a href="./registration.html"><button class="btn btn-primary" id="registerBtn2">REGISTER</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Statistics Section -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="stats-container">
+                <div class="stat-item fade-in">
+                    <div class="stat-number" data-target="14">0+</div>
+                    <div class="stat-label">years in sport</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number" data-target="210">0+</div>
+                    <div class="stat-label">happy players</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number" data-target="70">0+</div>
+                    <div class="stat-label">recruitments</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number" data-target="35">0+</div>
+                    <div class="stat-label">trained staff</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Offers Section -->
+    <section class="offers" id="offers">
+        <div class="container">
+            <h2>What we offer to players</h2>
+            <div class="offers-container">
+                <div class="offer-card fade-in">
+                    <div class="offer-image">
+                        <img src="./assets/schoolsport.avif" alt="Football development training" loading="lazy">
+                    </div>
+                    <div class="offer-content">
+                        <h3 class="offer-title">Football Development</h3>
+                        <p class="offer-description">Comprehensive training programs designed to enhance technical skills, tactical understanding, and physical conditioning.</p>
+                    </div>
+                </div>
+                <div class="offer-card fade-in">
+                    <div class="offer-image">
+                        <img src="./assets/sfksfk.avif" alt="Football foundation program" loading="lazy">
+                    </div>
+                    <div class="offer-content">
+                        <h3 class="offer-title">Foundation</h3>
+                        <p class="offer-description">Building strong fundamentals for young players through structured development pathways and mentorship.</p>
+                    </div>
+                </div>
+                <div class="offer-card fade-in">
+                    <div class="offer-image">
+                        <img src="./assets/photo_6044078313845755389_y.jpg" alt="Football school education" loading="lazy">
+                    </div>
+                    <div class="offer-content">
+                        <h3 class="offer-title">School</h3>
+                        <p class="offer-description">Balancing athletic development with education to create well-rounded individuals prepared for life beyond football.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Be Our Player Section -->
+    <section class="player" id="player">
+        <div class="container">
+            <div class="player-container fade-in">
+                <div class="player-content">
+                    <h2>Be our player</h2>
+                    <p>Join SFK Sport Group and unlock your football potential. Our recruitment process is designed to identify talent and provide opportunities for growth at every level.</p>
+                    <p>As part of our program, you'll receive professional coaching, exposure to scouts, and pathways to professional clubs. We're committed to developing not just skilled players, but well-rounded individuals.</p>
+                    <p>Getting started is simple. Register your interest, attend one of our assessment sessions, and let our experienced team guide your football journey.</p>
+                    <a href="./registration.html"><button class="btn btn-primary" id="registerBtn3">REGISTER</button></a>
+                </div>
+                <div class="player-image">
+                    <img src="./assets/Screenshot-2025-10-24-at-11.21.04-AM.png" alt="Football player in action" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Reasons Section -->
+    <section class="reasons" id="reasons">
+        <div class="container">
+            <h2>6 reasons for people to choose us</h2>
+            <div class="reasons-grid">
+                <div class="reason-card fade-in">
+                    <svg class="reason-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                    </svg>
+                    <h3 class="reason-title">Professional guidance</h3>
+                    <p>Experienced coaches and mentors dedicated to your development</p>
+                </div>
+                <div class="reason-card fade-in">
+                    <svg class="reason-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <h3 class="reason-title">Global network</h3>
+                    <p>Connections with clubs and scouts across multiple continents</p>
+                </div>
+                <div class="reason-card fade-in">
+                    <svg class="reason-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <h3 class="reason-title">Player development</h3>
+                    <p>Personalized training plans tailored to your strengths and goals</p>
+                </div>
+                <div class="reason-card fade-in">
+                    <svg class="reason-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <h3 class="reason-title">Proven experience</h3>
+                    <p>14+ years of successful recruitment and player development</p>
+                </div>
+                <div class="reason-card fade-in">
+                    <svg class="reason-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <h3 class="reason-title">Availability</h3>
+                    <p>Accessible programs with flexible scheduling to accommodate your needs</p>
+                </div>
+                <div class="reason-card fade-in">
+                    <svg class="reason-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 11l3 3L22 4"></path>
+                        <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
+                    </svg>
+                    <h3 class="reason-title">Trusted support</h3>
+                    <p>Dedicated team providing guidance throughout your football journey</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Fixed Background Section -->
+    <section class="fixed-bg-section" id="trials">
+        <div class="fixed-bg-overlay"></div>
+        <div class="fixed-bg-content fade-in">
+            <h2 class="fixed-bg-title">Want to become a professional footballer?</h2>
+            <p class="fixed-bg-subtitle">Register for official trials, get scouted, and take the next step in your football career.</p>
+            <a href="./registration.html"><button class="btn btn-primary" id="registerBtn4">Register</button></a>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-container fade-in">
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <div class="contact-text">Figa Bommercial Bank of Ethiopia Football Field</div>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <div class="contact-text"><a href="tel:+251944715726">+251944715726</a></div>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <div class="contact-text"><a href="mailto:info@sfksportgroup.com">enquiries@sfksportgroup.com</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <p class="footer-copyright">© 2025 SFK Sport Group. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Registration Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h2>Player Registration</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label class="form-label" for="name">Full Name</label>
+                    <input type="text" id="name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email Address</label>
+                    <input type="email" id="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="phone">Phone Number</label>
+                    <input type="tel" id="phone" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="age">Age</label>
+                    <input type="number" id="age" class="form-input" min="10" max="40" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Registration</button>
+                <p class="form-privacy">Your information is secure and will only be used for recruitment purposes.</p>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        // DOM Elements
+        const registerBtns = document.querySelectorAll('[id^="registerBtn"]');
+        const modal = document.getElementById('registerModal');
+        const modalClose = document.getElementById('modalClose');
+        const registerForm = document.getElementById('registerForm');
+        const heroContent = document.querySelector('.hero-content');
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const statNumbers = document.querySelectorAll('.stat-number');
+        
+        // Hero content animation
+        setTimeout(() => {
+            heroContent.style.opacity = '1';
+            heroContent.style.transform = 'translateY(0)';
+        }, 300);
+        
+        // Parallax effect for hero background
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroBg = document.querySelector('.hero-bg');
+            if (heroBg) {
+                heroBg.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+        
+        // Modal functionality
+        registerBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        modalClose.addEventListener('click', () => {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+        
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Form submission (placeholder)
+        registerForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // In a real implementation, this would send the form data to a server
+            alert('Thank you for your registration! We will contact you soon.');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+            registerForm.reset();
+        });
+        
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('active');
+                    }, index * 60);
+                    
+                    // Trigger count-up animation for stats
+                    if (entry.target.classList.contains('stat-item')) {
+                        const statNumber = entry.target.querySelector('.stat-number');
+                        if (statNumber) {
+                            animateValue(statNumber);
+                        }
+                    }
+                }
+            });
+        }, observerOptions);
+        
+        fadeElements.forEach(element => {
+            observer.observe(element);
+        });
+        
+        // Count-up animation for statistics
+        function animateValue(element) {
+            const target = parseInt(element.getAttribute('data-target'));
+            const duration = 2000;
+            const start = 0;
+            const increment = target / (duration / 16);
+            let current = start;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current) + '+';
+            }, 16);
+        }
+        
+        /* Analytics: paste tracking script here */
+    </script>
+</body>
+</html>
