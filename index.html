@@ -654,90 +654,6 @@
             opacity: 0.6;
         }
         
-        /* Modal */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        
-        .modal.active {
-            display: flex;
-            opacity: 1;
-        }
-        
-        .modal-content {
-            background-color: var(--secondary);
-            border-radius: var(--radius-lg);
-            padding: var(--spacing-2xl);
-            max-width: 500px;
-            width: 90%;
-            position: relative;
-            transform: scale(0.9);
-            transition: transform 0.3s ease;
-        }
-        
-        .modal.active .modal-content {
-            transform: scale(1);
-        }
-        
-        .modal-close {
-            position: absolute;
-            top: var(--spacing-md);
-            right: var(--spacing-md);
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: var(--muted);
-            transition: var(--transition);
-        }
-        
-        .modal-close:hover {
-            color: var(--primary);
-        }
-        
-        .form-group {
-            margin-bottom: var(--spacing-md);
-        }
-        
-        .form-label {
-            display: block;
-            margin-bottom: var(--spacing-xs);
-            font-weight: 500;
-        }
-        
-        .form-input {
-            width: 100%;
-            padding: var(--spacing-sm);
-            border: 1px solid #e2e8f0;
-            border-radius: var(--radius-sm);
-            font-family: inherit;
-            font-size: 1rem;
-            transition: var(--transition);
-        }
-        
-        .form-input:focus {
-            outline: none;
-            border-color: var(--accent);
-            box-shadow: 0 0 0 3px var(--accent-light);
-        }
-        
-        .form-privacy {
-            font-size: 0.875rem;
-            color: var(--muted);
-            margin-top: var(--spacing-md);
-        }
-        
         /* Responsive Design */
         @media (max-width: 992px) {
             .stats-container {
@@ -871,7 +787,7 @@
                         </svg>
                         Call +251944715726
                     </a>
-                    <a href="./registration.html"><button class="btn btn-secondary" id="registerBtn">REGISTER</button></a>
+                    <a href="./registration.html" class="btn btn-secondary">REGISTER</a>
                 </div>
                 <p class="hero-microcopy">Register Today!</p>
             </div>
@@ -891,7 +807,7 @@
                     <p>Our player development methodology combines technical training with mental preparation, ensuring our athletes are prepared for the demands of professional football. We provide personalized development plans tailored to each player's unique strengths and areas for improvement.</p>
                     <p>Beyond recruitment, we're committed to making a positive impact in communities across Ethiopia through football programs, training facilities, and educational initiatives that empower young athletes.</p>
                     <p class="about-disclaimer">Certified company</p>
-                    <a href="./registration.html"><button class="btn btn-primary" id="registerBtn2">REGISTER</button></a>
+                    <a href="./registration.html" class="btn btn-primary">REGISTER</a>
                 </div>
             </div>
         </div>
@@ -966,7 +882,7 @@
                     <p>Join SFK Sport Group and unlock your football potential. Our recruitment process is designed to identify talent and provide opportunities for growth at every level.</p>
                     <p>As part of our program, you'll receive professional coaching, exposure to scouts, and pathways to professional clubs. We're committed to developing not just skilled players, but well-rounded individuals.</p>
                     <p>Getting started is simple. Register your interest, attend one of our assessment sessions, and let our experienced team guide your football journey.</p>
-                    <a href="./registration.html"><button class="btn btn-primary" id="registerBtn3">REGISTER</button></a>
+                    <a href="./registration.html" class="btn btn-primary">REGISTER</a>
                 </div>
                 <div class="player-image">
                     <img src="./assets/Screenshot-2025-10-24-at-11.21.04-AM.png" alt="Football player in action" loading="lazy">
@@ -1038,7 +954,7 @@
         <div class="fixed-bg-content fade-in">
             <h2 class="fixed-bg-title">Want to become a professional footballer?</h2>
             <p class="fixed-bg-subtitle">Register for official trials, get scouted, and take the next step in your football career.</p>
-            <a href="./registration.html"><button class="btn btn-primary" id="registerBtn4">Register</button></a>
+            <a href="./registration.html" class="btn btn-primary">Register</a>
         </div>
     </section>
     
@@ -1080,40 +996,8 @@
         </div>
     </footer>
     
-    <!-- Registration Modal -->
-    <div class="modal" id="registerModal">
-        <div class="modal-content">
-            <button class="modal-close" id="modalClose">&times;</button>
-            <h2>Player Registration</h2>
-            <form id="registerForm">
-                <div class="form-group">
-                    <label class="form-label" for="name">Full Name</label>
-                    <input type="text" id="name" class="form-input" required>
-                </div>
-                <div class="form-group">
-                    <label class="form-label" for="email">Email Address</label>
-                    <input type="email" id="email" class="form-input" required>
-                </div>
-                <div class="form-group">
-                    <label class="form-label" for="phone">Phone Number</label>
-                    <input type="tel" id="phone" class="form-input" required>
-                </div>
-                <div class="form-group">
-                    <label class="form-label" for="age">Age</label>
-                    <input type="number" id="age" class="form-input" min="10" max="40" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit Registration</button>
-                <p class="form-privacy">Your information is secure and will only be used for recruitment purposes.</p>
-            </form>
-        </div>
-    </div>
-    
     <script>
         // DOM Elements
-        const registerBtns = document.querySelectorAll('[id^="registerBtn"]');
-        const modal = document.getElementById('registerModal');
-        const modalClose = document.getElementById('modalClose');
-        const registerForm = document.getElementById('registerForm');
         const heroContent = document.querySelector('.hero-content');
         const fadeElements = document.querySelectorAll('.fade-in');
         const statNumbers = document.querySelectorAll('.stat-number');
@@ -1131,36 +1015,6 @@
             if (heroBg) {
                 heroBg.style.transform = `translateY(${scrolled * 0.5}px)`;
             }
-        });
-        
-        // Modal functionality
-        registerBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                modal.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            });
-        });
-        
-        modalClose.addEventListener('click', () => {
-            modal.classList.remove('active');
-            document.body.style.overflow = '';
-        });
-        
-        window.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        });
-        
-        // Form submission (placeholder)
-        registerForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            // In a real implementation, this would send the form data to a server
-            alert('Thank you for your registration! We will contact you soon.');
-            modal.classList.remove('active');
-            document.body.style.overflow = '';
-            registerForm.reset();
         });
         
         // Intersection Observer for fade-in animations
